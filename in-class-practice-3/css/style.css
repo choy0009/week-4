@@ -1,0 +1,38 @@
+.firstform, .secondform {
+    width: 600px;
+    border: 2px solid black;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.firstform section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.firstform label, .firstform input {
+    /* background-color: lightgrey; */
+
+    /* so we can give these inline fields a width, make them display:block */
+    display: block;
+    width: 30%;
+}
+
+/* make a different form layout (vertical) */
+.secondform {
+    display: flex;
+}
+
+.secondform section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* flexgrow has to be applied to things individually inside of the display:flex container */
+.secondform .labels {
+    flex-grow: 1;
+}
+
+.secondform .fields {
+    flex-grow: 2;
+}
